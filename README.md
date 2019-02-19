@@ -25,12 +25,10 @@ Spring 中对应了 5 种不同类型的通知：
  
 
 AOP 的代码结构:
-```
-MethodInvocation 接口  // 实现类包含了切面逻辑，如上面的 logMethodInvocation
-Advice 接口        // 继承了 InvocationHandler 接口
-BeforeAdvice 类    // 实现了 Advice 接口，是一个前置通知
-SimpleAOP 类       // 生成代理类
-SimpleAOPTest      // SimpleAOP 从测试类
-HelloService 接口   // 目标对象接口
-HelloServiceImpl   // 目标对象
-```
+ - MethodInvocation 接口  // 实现类包含了切面逻辑，如上面的 logMethodInvocation
+ - Advice 接口        // 继承了 InvocationHandler 接口
+ - BeforeAdvice 类    // 实现了 Advice 接口，是一个前置通知
+ - SimpleAOP 类       // 生成代理类
+ - SimpleAOPTest      // SimpleAOP 从测试类
+ - HelloService 接口   // 目标对象接口
+ - HelloServiceImpl   // 目标对象
